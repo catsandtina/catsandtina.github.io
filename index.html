@@ -48,7 +48,8 @@
     $('p').html('Pumpkin and Romeo are two very naughty kittens that this girl found at the park.');
     </script>
 
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+<script>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" value="Randomize" onclick="randomImg1()">
   cats
 </button>
 
@@ -68,22 +69,19 @@
       </div>
     </div>
   </div>
-</div>
 
-<input class="randombutton" type="button" value="Randomize" onclick="randomImg1()"/>
 
-<script type="text/javascript">
     function randomImg1() {
 
-
       myImages1 = new Array();
-      myImages1[0] = "https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg";
-      myImages1[1] = "https://img1.wsimg.com/fos/sales/cwh/8/images/cats-with-hats-shop-02.jpg";
+      myImages1[0] = "cat1.jpg";
+      myImages1[1] = "cat2.jpg";
 
       var rnd = Math.floor( Math.random() * myImages1.length ); //incorporated other solution
 
       document.getElementById("image").innerHTML = "<img src='" + myImages1[rnd] + "' alt='image'></img>";
     }
+</div>
 </script>
 
 	</body>
